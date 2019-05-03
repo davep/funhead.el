@@ -31,7 +31,7 @@
 (defun funhead--format ()
   "Return the correct `funhead' format for the current buffer."
   (cond ((derived-mode-p 'python-mode 'sh-mode 'makefile-gmake-mode
-                         'yaml-mode 'perl-mode)
+                         'yaml-mode 'perl-mode 'julia-mode)
          (lambda ()
            (insert (concat (make-string 78 ?#) "\n# "))))
         ((derived-mode-p 'emacs-lisp-mode 'lisp-mode)
