@@ -34,7 +34,7 @@
                          'yaml-mode 'perl-mode 'julia-mode 'fish-mode)
          (lambda ()
            (insert (concat (make-string 78 ?#) "\n# "))))
-        ((derived-mode-p 'emacs-lisp-mode 'lisp-mode)
+        ((derived-mode-p 'emacs-lisp-mode 'lisp-mode 'clojure-mode)
          (lambda ()
            (insert (concat (make-string 78 ?\;) "\n;; "))))
         ((derived-mode-p 'js-mode 'css-mode)
