@@ -43,6 +43,10 @@
         ((derived-mode-p 'js-mode 'css-mode)
          (lambda ()
            (insert "/**\n * \n */")
+           (next-line -1)))
+        ((derived-mode-p 'c-mode)
+         (lambda ()
+           (insert (concat "/" (make-string 77 ?*) "\n * \n */"))
            (next-line -1)))))
 
 ;;;###autoload
