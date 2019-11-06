@@ -58,7 +58,7 @@
     (when header
       (beginning-of-line)
       (insert "\n")
-      (next-line -1)
+      (forward-line -1)
       (funcall header))))
 
 (provide 'funhead)
