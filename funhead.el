@@ -48,7 +48,8 @@
         ((derived-mode-p 'c-mode)
          (lambda ()
            (insert (concat "/" (make-string 77 ?*) "\n * \n */"))
-           (forward-line -1)))))
+           (forward-line -1)
+           (move-end-of-line 1)))))
 
 ;;;###autoload
 (defun funhead ()
