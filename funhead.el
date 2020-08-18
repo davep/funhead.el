@@ -32,7 +32,7 @@
   "Return the correct `funhead' format for the current buffer."
   (cond ((derived-mode-p 'python-mode 'sh-mode 'makefile-gmake-mode
                          'makefile-bsdmake-mode 'yaml-mode 'perl-mode
-                         'fish-mode)
+                         'fish-mode 'conf-unix-mode)
          (lambda ()
            (insert (concat (make-string 78 ?#) "\n# "))))
         ((derived-mode-p 'julia-mode)
