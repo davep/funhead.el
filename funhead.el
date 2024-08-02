@@ -1,5 +1,5 @@
 ;;; funhead.el --- Insert my standard function headers -*- lexical-binding: t -*-
-;; Copyright 2019-2020 by Dave Pearson <davep@davep.org>
+;; Copyright 2019-2024 by Dave Pearson <davep@davep.org>
 
 ;; Author: Dave Pearson <davep@davep.org>
 ;; Version: 1.15
@@ -32,7 +32,7 @@
   "Return the correct `funhead' format for the current buffer."
   (cond ((derived-mode-p 'python-mode 'sh-mode 'makefile-gmake-mode
                          'makefile-bsdmake-mode 'yaml-mode 'perl-mode
-                         'fish-mode 'conf-unix-mode)
+                         'fish-mode 'conf-unix-mode 'terraform-mode)
          (lambda ()
            (insert (concat (make-string 78 ?#) "\n# "))))
         ((derived-mode-p 'julia-mode)
