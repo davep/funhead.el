@@ -1,8 +1,8 @@
 ;;; funhead.el --- Insert my standard function headers -*- lexical-binding: t -*-
-;; Copyright 2019-2024 by Dave Pearson <davep@davep.org>
+;; Copyright 2019-2026 by Dave Pearson <davep@davep.org>
 
 ;; Author: Dave Pearson <davep@davep.org>
-;; Version: 1.16
+;; Version: 1.17.0
 ;; Keywords: convenience
 ;; URL: https://github.com/davep/funhead.el
 ;; Package-Requires: ((emacs "24.1"))
