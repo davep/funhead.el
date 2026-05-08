@@ -45,7 +45,7 @@
         ((derived-mode-p 'zig-mode)
          (lambda ()
            (insert (concat (make-string 78 ?/) "\n// "))))
-        ((derived-mode-p 'js-mode 'css-mode)
+        ((derived-mode-p 'js-mode 'css-mode 'tsx-mode)
          (lambda ()
            (insert "/**\n * \n */")
            (forward-line -1)))
